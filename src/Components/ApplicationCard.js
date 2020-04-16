@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import { Row, Col, Rate, Button, Space } from 'antd';
-import vsImage from '../Images/1024px-Visual_Studio_Code_1.35_icon.svg.png'
+import vsImage from '../Static/Images/1024px-Visual_Studio_Code_1.35_icon.svg.png'
 
 const ApplicationCard = (props) => {
   return (

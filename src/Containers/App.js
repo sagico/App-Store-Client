@@ -1,9 +1,9 @@
 import React  , { Fragment, useState } from 'react'; 
 import logo from './logo.svg';
-import banner from '../Images/webbutveckling-it-2.webp';
+import banner from '../Static/Images/webbutveckling-it-2.webp';
 import './App.css';
 import SideBar from '../Components/sidebar';
-import doodle from '../Images/doodles.webp'
+import doodle from '../Static/Images/doodles.webp'
 import ApplicationDualArea from '../Components/ApplicationDualArea';
 
 
