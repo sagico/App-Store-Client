@@ -5,23 +5,15 @@ import { UserOutlined, StarOutlined, SafetyOutlined, ContainerOutlined, Download
 const SideBar = (props) => {
   return (
     <Fragment>
-         <Drawer
-          placement="right"
-          closable={false}
-          visible={true}
-          drawerStyle={{backgroundColor:'#F6F5F8'}}
-          bodyStyle={{marginTop:'15vh'}}
-          mask={false}
-          >
+      <div class='side'>
 
-        <Avatar size={64} icon={<UserOutlined />} />
+        <Avatar size={64} icon={<UserOutlined />} style={{marginLeft:'5vw'}} />
 
         <Menu
-        style={{ width: 300}}
         defaultSelectedKeys={['1']}
         defaultOpenKeys={['sub1']}
         mode="inline"
-        style={{backgroundColor:'#F6F5F8'}}
+        style={{color:'#342868', backgroundColor:'#E5F8FF'}}
         >
         <Menu.ItemGroup key="g1">
             <Menu.Item key="1" className='Sidebar-List-Item' >תוכנות ממולצות   <StarOutlined /></Menu.Item>
@@ -30,7 +22,7 @@ const SideBar = (props) => {
             <Menu.Item key="4" className='Sidebar-List-Item'>עדכונים <DownloadOutlined /></Menu.Item>
           </Menu.ItemGroup>
           </Menu>
-        </Drawer>
+          </div>
     </Fragment>
   );
 }

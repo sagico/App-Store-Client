@@ -1,45 +1,61 @@
-.App {
-  
-  height: 100%;
-}
+
 
 .Sidebar-List-Item {
   text-align: right;
   font-size: 20px !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.side {
+  background-color: #E5F8FF;
+  border-radius: 1vw 47px 47px 20vw;
+  -moz-border-radius: 1vw 47px 47px 20vw;
+  -webkit-border-radius: 1vw 47px 47px 20vw;
+  border: 17px solid #E5F8FF;
+  height: 100vh;
+  width: 20.5vw;
+  right: 5px;
+  position: absolute;
+  padding-top: 15vh;
+
+
 }
 
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.banner {
+  width:70vw;
+  margin-left: 5vw;
+  border-radius: 15px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.side li {
+  font-weight: 500;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.searchBox {
+  direction: rtl;
+  border-radius: 15px;
+  color: #392A7D;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.IconsSizing  svg{
+  height: 32px;
+  width: 32px;
+  cursor: pointer;
+}
+
+.ApplicationBox {
+  width:15vw;
+  height: 15vh;
+  border-radius: 15px;
+  margin-bottom: 3vh;
+}
+
+.ModalCircle {
+    background-color: #776fc4;
+    height: 20vw;
+    width: 20vw;
+    border-radius: 50vw;
+    right: 5vw;
+    position: absolute;
+    top: 4vw;
 }

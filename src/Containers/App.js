@@ -6,40 +6,46 @@ import SideBar from '../Components/sidebar';
 import doodle from '../Static/Images/doodles.webp'
 import ApplicationDualArea from '../Components/ApplicationDualArea';
 
+import HeaderBar from '../Components/header';
 
-
-import { Layout, Drawer } from 'antd';
+import { Layout, Modal } from 'antd';
 
 
 import 'antd/dist/antd.css';
 
-const { Content, Sider } = Layout;
+const { Content, Sider, Header } = Layout;
   const App = () => {
   const [isOpen, setIsOpen] = useState (false);
   return (
     <div style={{height:'100%'}} >
+      
+     
       <Layout  style={{height:'100%'}} >
-        <Content className="App" style={{ padding: '2vh 4vw', height:'100%'}}>
+        
+        <Content className="App" style={{ paddingRight: '11vw', height:'100%', backgroundColor:'white',overflowY:'hidden'}}>
+        <HeaderBar/>
           <div>
-              <img src={banner} />
+            <img src={banner} className='banner'/>
               <ApplicationDualArea title='המלצת השף' openDrawer={() => setIsOpen(true)}/>
           </div>
         </Content>
-        <Sider>
+        <Sider style={{backgroundColor:'white'}}>
           <SideBar/>
         </Sider>
       </Layout>   
-      <Drawer
-          title="אפליקציה"
-          placement={'bottom'}
+
+      <Modal
+          mask={false}
           closable={true}
-          onClose={()=>setIsOpen(false)}
+          onCancel={()=>setIsOpen(false)}
           visible={isOpen}
-          height={'95vh'}
+          width={'70vw'}
+          bodyStyle={{height:'70vh'}}
+          footer={null}
         >
+         <div className='ModalCircle'></div>
          
-          <p>Some contents...</p>
-        </Drawer>  
+        </Modal>
     </div>
   );
 }

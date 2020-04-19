@@ -5,24 +5,22 @@ import ApplicationCard from './ApplicationCard';
 const ApplicationDualArea = (props) => {
   
   return (
-      <div>
+      <div style={{width:'75vw',paddingLeft:'5vw'}}>
         <Row style={{direction:'rtl',fontFamily:'Segoe UI'}}>
             <Col flex style={{fontSize:'2.5em', color:' #4F4E49'}}>{props.title}</Col>
         </Row>
         <Row>
-            <Row>
-                  <Col span={4}  style={{margin:'1vmax'}}  onClick={props.openDrawer}><ApplicationCard/></Col>
-                  <Col span={4}  style={{margin:'1vmax'}}  onClick={props.openDrawer} ><ApplicationCard/></Col>
-                  <Col span={4}  style={{margin:'1vmax'}} onClick={props.openDrawer} ><ApplicationCard/></Col>
-                  <Col span={4}  style={{margin:'1vmax'}} onClick={props.openDrawer} ><ApplicationCard/></Col>
-                  <Col span={4}  style={{margin:'1vmax'}} onClick={props.openDrawer} ><ApplicationCard/></Col>
+          <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }} style={{width:'100%'}}>
+                  <Col span={6}  onClick={props.openDrawer}><ApplicationCard/></Col>
+                  <Col span={6}  onClick={props.openDrawer} ><ApplicationCard/></Col>
+                  <Col span={6}  onClick={props.openDrawer} ><ApplicationCard/></Col>
+                  <Col span={6}  onClick={props.openDrawer} ><ApplicationCard/></Col>
             </Row>
-            <Row>
-                  <Col span={4} style={{margin:'1vmax'}}><ApplicationCard/></Col>
-                  <Col span={4}  style={{margin:'1vmax'}}><ApplicationCard/></Col>
-                  <Col span={4}  style={{margin:'1vmax'}}><ApplicationCard/></Col>
-                  <Col span={4}  style={{margin:'1vmax'}}><ApplicationCard/></Col>
-                  <Col span={4}  style={{margin:'1vmax'}}><ApplicationCard/></Col>
+            <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }} style={{width:'100%'}}>
+                  <Col span={6} onClick={props.openDrawer}><ApplicationCard/></Col>
+                  <Col span={6} onClick={props.openDrawer} ><ApplicationCard/></Col>
+                  <Col span={6} onClick={props.openDrawer} ><ApplicationCard/></Col>
+                  <Col span={6} onClick={props.openDrawer} ><ApplicationCard/></Col>
             </Row>
             
         </Row>
